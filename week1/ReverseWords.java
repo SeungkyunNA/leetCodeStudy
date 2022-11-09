@@ -13,20 +13,23 @@ public class ReverseWords {
             System.out.println("incorrect : " + reverseWords("Let's take LeetCode contest"));
         }
 
+        // hello
+
     }
 
     public static String reverseWords(String s) {
 
-          
         char[] args = s.toCharArray();
         char[] reverse = new char[args.length];
         int blankCount = 0;
-        
+
         for (int i = 0; i < args.length; i++) {
 
             reverse[reverse.length - 1 - i] = args[i];
 
-            if (args[i] == ' ') { blankCount++; }
+            if (args[i] == ' ') {
+                blankCount++;
+            }
         }
 
         String[] words = new String[blankCount + 1];
@@ -38,20 +41,20 @@ public class ReverseWords {
                 words[j] = save;
                 j--;
                 save = "";
-            } 
-            else if (i == args.length - 1) {
+            } else if (i == args.length - 1) {
                 save += reverse[i];
                 words[j] = save;
-            } 
-            else {
+            } else {
                 save += reverse[i];
             }
         }
-        
+
         String result = "";
         for (int i = 0; i < words.length; i++) {
             result += words[i];
-            if (i != words.length - 1) { result += " "; }
+            if (i != words.length - 1) {
+                result += " ";
+            }
         }
 
         return result;
