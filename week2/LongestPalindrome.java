@@ -35,7 +35,7 @@ public static int longestPalindrome(String s) {
         }
     }
 
-    if( evenLength != list.length){
+    if (evenLength != list.length) {
         oddLength++;
     }
 
