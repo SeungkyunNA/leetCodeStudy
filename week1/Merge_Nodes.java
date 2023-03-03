@@ -1,22 +1,10 @@
 
 // https://leetcode.com/problems/merge-nodes-in-between-zeros/
-/**
- * Runtime: 14 ms, faster than 57.34% of Java online submissions for Merge Nodes in Between Zeros.
- * Memory Usage: 303.2 MB, less than 48.35% of Java online submissions for Merge Nodes in Between Zeros.
- */
 
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
 
 package week1;
+import DS.ListNode;
+
 
 public class Merge_Nodes {
 
@@ -24,7 +12,7 @@ public class Merge_Nodes {
 
     }
 
-    public ListNode mergeNodes(ListNode head) {
+    public static ListNode mergeNodes(ListNode head) {
 
         ListNode current = head;
         ListNode newList = null;
