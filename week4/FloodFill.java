@@ -2,9 +2,6 @@
 
 package week4;
 
-import java.util.ArrayList;
-import java.util.List;
-
 class FloodFill {
 
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {

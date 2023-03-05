@@ -1,6 +1,7 @@
 //https://leetcode.com/problems/range-sum-of-bst/
 
 package week2;
+import DS.TreeNode;
 
 public class RangeSumBST {
     /**
